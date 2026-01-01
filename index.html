@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Benim Sitem</title>
+<meta charset="UTF-8">
+<title>Güzel Ati ❤ Elçin</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(270deg, #ff4d6d, #7b2cbf, #ff758f);
+  background-size: 600% 600%;
+  animation: gradientBG 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.text {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #fff; }
+  to { text-shadow: 0 0 25px #ffccd5; }
+}
+
+.heart {
+  color: #ffccd5;
+}
+
+/* Müzik çalar köşede dursun */
+audio {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+}
+</style>
 </head>
+
 <body>
-  <h1>Merhaba 👋</h1>
-  <p>GitHub Pages çalışıyor.</p>
+
+<!-- 🎵 ŞARKI BURADA -->
+<audio controls loop>
+  <source src="sarki.mp3" type="audio/mpeg">
+</audio>
+
+<div class="text">
+  Güzel Ati <span class="heart">❤</span> Elçin
+</div>
+
 </body>
 </html>
