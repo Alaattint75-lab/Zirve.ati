@@ -2,62 +2,63 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>Güzel Ati ❤ Elçin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zirve.at1 ❤ Elçin</title>
 
 <style>
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(270deg, #ff4d6d, #7b2cbf, #ff758f);
-  background-size: 600% 600%;
-  animation: gradientBG 10s ease infinite;
+  background: radial-gradient(circle at top, #ff9aa2, #9d4edd 55%, #240046);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Arial', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Arial, sans-serif;
+  overflow: hidden;
 }
 
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.text {
-  color: white;
-  font-size: 3rem;
+/* Cam kart */
+.card {
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 28px;
+  padding: 40px 32px;
   text-align: center;
-  text-shadow: 0 0 10px rgba(255,255,255,0.8);
-  animation: glow 2s infinite alternate;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+
+/* Üst yazı */
+.title {
+  font-size: 2.8rem;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* Alt yazı */
+.subtitle {
+  font-size: 1.6rem;
+  color: rgba(255,255,255,0.9);
+}
+
+/* Yumuşak parıltı */
+.glow {
+  animation: glow 2.5s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-  from { text-shadow: 0 0 10px #fff; }
-  to { text-shadow: 0 0 25px #ffccd5; }
-}
-
-.heart {
-  color: #ffccd5;
-}
-
-/* Müzik çalar köşede dursun */
-audio {
-  position: fixed;
-  bottom: 15px;
-  left: 15px;
+  from { text-shadow: 0 0 10px rgba(255,255,255,0.4); }
+  to   { text-shadow: 0 0 25px rgba(255,200,220,0.9); }
 }
 </style>
 </head>
 
 <body>
 
-<!-- 🎵 ŞARKI BURADA -->
-<audio controls loop>
-  <source src="sarki.mp3" type="audio/mpeg">
-</audio>
-
-<div class="text">
-  Güzel Ati <span class="heart">❤</span> Elçin
+<div class="card">
+  <div class="title glow">Zirve.at1</div>
+  <div class="subtitle glow">Elçin</div>
 </div>
 
 </body>
